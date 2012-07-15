@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var list = [];
 for (var i = 0; i < 1000; i++) list.push(i);
 
