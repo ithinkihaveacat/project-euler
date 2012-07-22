@@ -6,7 +6,7 @@ let sum a b =
 
 let rec fib l limit =
     match List.length l with
-          0 -> fib (1 :: l) limit
+        | 0 -> fib (1 :: l) limit
         | 1 -> fib (2 :: l) limit
         | _ -> if ((List.nth l 0) + (List.nth l 1)) > limit then l else fib (((List.nth l 0) + (List.nth l 1)) :: l) limit
     ;;
