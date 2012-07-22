@@ -14,3 +14,12 @@ let repeat s n =
         if i == n then a else _repeat (s :: a) (i + 1)
     in _repeat [] 0
 ;;
+
+let rec range a b =
+    if a > b then []
+    else a :: range (a+1) b
+    ;;
+
+let lmax l =
+    List.fold_left (fun x xs -> max x xs) (List.nth l 0) l    
+;;
